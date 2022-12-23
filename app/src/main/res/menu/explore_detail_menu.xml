@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/addFavourite"
+        app:actionLayout="@layout/activity_explore_detail"
+        android:title="Add to Favourite"
+        app:showAsAction="never"/>
+
+</menu>

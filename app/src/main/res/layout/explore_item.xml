@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="4dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/exploreImage"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:civ_border_width="0dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:id="@+id/itemNick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nick"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:id="@+id/itemIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" In "/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:id="@+id/itemTipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Programming"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:id="@+id/itemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="title"/>
+
+            <TextView
+                android:id="@+id/itemViewmore"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="22dp"
+                android:textColor="#0085FF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW MORE"
+                 />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

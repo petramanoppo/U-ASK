@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/verifyAnswer"
+        app:actionLayout="@layout/activity_explore_detail"
+        android:title="Verify Answer"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/editAnswer"
+        app:actionLayout="@layout/activity_explore_detail"
+        android:title="Edit Answer"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/deleteAnswer"
+        app:actionLayout="@layout/activity_explore_detail"
+        android:title="Delete Answer"
+        app:showAsAction="never"/>
+
+
+</menu>

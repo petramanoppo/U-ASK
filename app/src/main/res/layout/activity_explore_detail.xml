@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ExploreDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:cardElevation="5dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/userImgProfilDetail"
+                        android:layout_marginTop="7dp"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:civ_border_width="0dp"
+                        app:civ_border_color="#FF000000"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/NamaUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:text="Nama" />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/black"
+                    android:id="@+id/exploreDetailTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Nama" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/exploreDetailBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Nama" />
+
+
+                <ImageView
+
+                    android:id="@+id/imgDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+
+                    android:id="@+id/buttonAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="ANSWER"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#0085FF"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerAnswer"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
